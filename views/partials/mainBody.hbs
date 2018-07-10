@@ -1,0 +1,34 @@
+
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+        <h1 class="display-4">Challenge - 1</h1>
+        <p class="lead">Como solución a tener únicamente la posibilidad de usar un IF, usé una variable que contenía los tres factores de evaluación, usando el 15 como un múltiplo común tanto para 3 como para 5.</p>
+        {{#if git}}
+        <a class="btn btn-primary btn-lg" href="#" role="button">
+            Proyecto en Git
+             <i class="fab fa-github"></i>
+        </a>
+        {{/if }}
+        <hr class="my-4">
+
+                {{!-- TABLE --}}
+                <div class="col-2">
+                    <table class="table table-hover table-dark">
+                        <thead>
+                            <tr>
+                            <th scope="col">Lista de Números</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{#each data }}
+                                <tr>
+                                    <th scope="row"> {{ @this }} </th>
+                                </tr>
+                            {{/each }}
+                        </tbody>
+                    </table>
+                </div>
+                {{!-- TABLE --}}
+
+    </div>
+    <!-- JUMBOTTON -->
